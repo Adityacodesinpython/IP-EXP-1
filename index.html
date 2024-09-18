@@ -3,71 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Home Page</title>
+    <title>BMW</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     <header>
-        <h1>Company Name</h1>
-        <img src="logo.png" alt="Company Logo">
+        <div class="container header-container">
+            <img src="logo.png" alt="Bavarian Motor Works Logo" class="logo">
+            <h1>Bavarian Motor Works</h1>
+        </div>
     </header>
 
     <nav>
-        <ul>
+        <ul class="nav-links">
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <table>
-            <tr>
-                <th>Name</th>
-                <td>Company Name</td>
-            </tr>
-            <tr>
-                <th>Address</th>
-                <td>1234 Main St, Anytown, USA</td>
-            </tr>
-            <tr>
-                <th>Contact Information</th>
-                <td>Email: contact@company.com<br>Phone: (123) 456-7890</td>
-            </tr>
-        </table>
-        <p>Brief description of the company.</p>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ABC Corporation has been a leader in the industry for over 20 years, providing top-notch services and innovative solutions to clients worldwide.</p>
+                    <table class="info-table">
+                        <tr>
+                            <th>Founded</th>
+                            <td>2004</td>
+                        </tr>
+                        <tr>
+                            <th>Location</th>
+                            <td>1234 Innovation Drive, Tech City, USA</td>
+                        </tr>
+                        <tr>
+                            <th>Contact</th>
+                            <td>Email: info@abccorp.com<br>Phone: (555) 123-4567</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Service 1</li>
-            <li>Service 2</li>
-            <li>Service 3</li>
-        </ul>
-    </section>
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+                <li>Consulting</li>
+                <li>Software Development</li>
+                <li>Project Management</li>
+                <li>Customer Support</li>
+            </ul>
+        </section>
 
-    <section id="media">
-        <h2>Introduction Audio</h2>
-        <audio controls>
-            <source src="intro.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        
-        <h2>Promotional Video</h2>
-        <video controls>
-            <source src="promo.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
-    </section>
+        <section id="portfolio" class="section">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <h3>Project One</h3>
+                    <p>A brief description of Project One.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Project Two</h3>
+                    <p>A brief description of Project Two.</p>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </section>
+
+        <section id="media" class="section">
+            <h2>Media</h2>
+            <div class="media-content">
+                <div class="video-section">
+                    <h3>Promotional Video</h3>
+                    <video controls>
+                        <source src="promo.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>Follow us on social media:</p>
-        <a href="http://facebook.com/company">Facebook</a> |
-        <a href="http://twitter.com/company">Twitter</a> |
-        <a href="http://instagram.com/company">Instagram</a>
+        <div class="container footer-container">
+            <p>Follow us on social media:</p>
+            <div class="social-links">
+                <a href="https://facebook.com/abccorp" target="_blank">Facebook</a>
+                <a href="https://twitter.com/abccorp" target="_blank">Twitter</a>
+                <a href="https://instagram.com/abccorp" target="_blank">Instagram</a>
+                <a href="https://linkedin.com/company/abccorp" target="_blank">LinkedIn</a>
+            </div>
+            <p>&copy; 2024 ABC Corporation. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
